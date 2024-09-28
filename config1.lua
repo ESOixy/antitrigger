@@ -14,7 +14,7 @@ Config.Target = {
     ["Message"] = "Bol si permanentne zabanovaný zo serveru ESOTEST"
 }
 Config.AmountTrigger = {
-    {trigger = "esx_communityservicesex:sendToCommunityService", value = -1},
+    {trigger = "esx_communityservicesex:sendToCommunityService", values = {-1}}, -- Add default values as needed
     {trigger = "esx_carthief:pay", values = {1100}},
     {trigger = "drug_sales:pay", values = {100, 400, 300, 250, 304}}
 }
