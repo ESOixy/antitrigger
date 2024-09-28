@@ -1,4 +1,4 @@
--- config.lua
+Config = {} -- Ensure Config is defined
 
 Config.HeartBeat = Config.HeartBeat or {}  
 Config.HeartBeat.AntiCheatResource = 'es-trigger'  
@@ -13,7 +13,6 @@ Config.Target = {
     ["HeartBeatWebhook"] = "https://discord.com/api/webhooks/1289617775484076203/fnFms0Ji6QsmemsYGuskMh-zZ9cRW8qkYS_1rL2OU-7QIpyqMeq1jT6-ZO43cE3271sE",
     ["Message"] = "Bol si permanentne zabanovaný zo serveru ESOTEST"
 }
-
 Config.AmountTrigger = {
     {trigger = "esx_communityservicesex:sendToCommunityService", value = -1},
     {trigger = "esx_carthief:pay", values = {1100}},
