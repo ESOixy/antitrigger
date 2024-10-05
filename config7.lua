@@ -1,6 +1,6 @@
-Config = {} 
-Config.HeartBeat = Config.HeartBeat or {}  
-Config.HeartBeat.AntiCheatResource = 'es-trigger'  
+Config = {}
+Config.HeartBeat = Config.HeartBeat or {}
+Config.HeartBeat.AntiCheatResource = 'es-trigger'
 
 Config.Target = {
     ["Abnormal Trigger Reset Timing"] = 5000, -- v ms
@@ -12,10 +12,11 @@ Config.Target = {
     ["HeartBeatWebhook"] = "https://discord.com/api/webhooks/1289617775484076203/fnFms0Ji6QsmemsYGuskMh-zZ9cRW8qkYS_1rL2OU-7QIpyqMeq1jT6-ZO43cE3271sE",
     ["Message"] = "Bol si permanentne zabanovaný zo serveru ESOTEST"
 }
+
 Config.AmountTrigger = {
     {trigger = "esx_communityservicesex:sendToCommunityService", values = {-1}},
     {trigger = "esx_carthief:pay", values = {1100}},
-    {trigger = "drugtest1", values = {xanax,weed}},
+    {trigger = "drugtest1", values = {"xanax", "weed"}},  -- Changed to include strings
     {trigger = "drug_sales:pay", values = {100, 400, 300, 250, 304}}
 }
 
@@ -30,4 +31,4 @@ Config.Abnormal = {
 Config.Trigger = {
     { eventName = "esx_policejob:handcuff", job = {"police", "sheriff", "fbi", "ambulance"}, reason = "debilko" },
     { eventName = "esx_jailer:sendToJail", job = {"police", "sheriff", "fbi", "ambulance"}, reason = "debilko" },
-}  
+}
